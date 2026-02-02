@@ -1,0 +1,118 @@
+/MANIFEST:EMBED
+/MANIFESTINPUT:"..\Build\Windows\Resources\Default-Win64.manifest"
+/NOLOGO
+/DEBUG:FULL
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/FIXED:No
+/NXCOMPAT
+/STACK:12000000
+/DELAY:UNLOAD
+/DLL
+/PDBALTPATH:%_PDB%
+/d2:-ExtendedWarningInfo
+/OPT:NOREF
+/OPT:NOICF
+/INCREMENTAL:NO
+/ignore:4199
+/ignore:4099
+/ALTERNATENAME:__imp___std_init_once_begin_initialize=__imp_InitOnceBeginInitialize
+/ALTERNATENAME:__imp___std_init_once_complete=__imp_InitOnceComplete
+/DELAYLOAD:"d3d12.dll"
+/DELAYLOAD:"DBGHELP.DLL"
+/LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.38.33130\lib\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\ucrt\x64"
+/LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.22621.0\um\x64"
+/NODEFAULTLIB:"LIBCMT"
+/NODEFAULTLIB:"LIBCPMT"
+/NODEFAULTLIB:"LIBCMTD"
+/NODEFAULTLIB:"LIBCPMTD"
+/NODEFAULTLIB:"MSVCRTD"
+/NODEFAULTLIB:"MSVCPRTD"
+/NODEFAULTLIB:"LIBC"
+/NODEFAULTLIB:"LIBCP"
+/NODEFAULTLIB:"LIBCD"
+/NODEFAULTLIB:"LIBCPD"
+/FUNCTIONPADMIN:6
+/NOIMPLIB
+"C:\Unreal Projects\TestFrontendUI\Intermediate\Build\Win64\x64\TestFrontendUIEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.ValApi.Cpp20.h.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\Module.FrontendUI.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\FrontendFunctionLibrary.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\FrontendGameplayTags.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\FrontendUI.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\PushConfirmScreenAsyncAction.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\PushSoftWidgetAsyncAction.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\FrontendDeveloperSettings.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\FrontendGameUserSettings.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\LoadingScreenSettings.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\LoadingScreenInterface.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\FrontendUISubsystem.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\LoadingScreenSubsystem.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\BaseActivatableWidget.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\ConfirmScreenWidget.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\PrimaryLayoutWidget.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\FrontendCommonButtonBase.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\FrontendCommonListView.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\FrontendTabListWidgetBase.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\DataListEntryMapping.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\KeyRemapScreenWidget.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\OptionsDataInteractionHelper.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\OptionsDataRegistry.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\OptionsDetailsViewWidget.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\OptionsScreenWidget.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\BaseListDataObject.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\CollectionListDataObject.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\KeyRemapListDataObject.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\ScalarListDataObject.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\StringListDataObject.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\StringResolutionListDataObject.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\ValueListDataObject.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\BaseListEntryWidget.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\KeyRemapListEntryWidget.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\ScalarListEntryWidget.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\StringListEntryWidget.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\FrontendCommonRotator.cpp.obj"
+"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\FrontendUI\Default.rc2.res"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Slate\UnrealEditor-Slate.lib"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\SlateCore\UnrealEditor-SlateCore.lib"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\InputCore\UnrealEditor-InputCore.lib"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\PreLoadScreen\UnrealEditor-PreLoadScreen.lib"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Core\UnrealEditor-Core.lib"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\UMG\UnrealEditor-UMG.lib"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\GameplayTags\UnrealEditor-GameplayTags.lib"
+"..\Plugins\Runtime\CommonUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\CommonUI\UnrealEditor-CommonUI.lib"
+"..\Plugins\Runtime\CommonUI\Intermediate\Build\Win64\x64\UnrealEditor\Development\CommonInput\UnrealEditor-CommonInput.lib"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\DeveloperSettings\UnrealEditor-DeveloperSettings.lib"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\PropertyPath\UnrealEditor-PropertyPath.lib"
+"..\Plugins\EnhancedInput\Intermediate\Build\Win64\x64\UnrealEditor\Development\EnhancedInput\UnrealEditor-EnhancedInput.lib"
+"delayimp.lib"
+"wininet.lib"
+"rpcrt4.lib"
+"ws2_32.lib"
+"dbghelp.lib"
+"comctl32.lib"
+"Winmm.lib"
+"kernel32.lib"
+"user32.lib"
+"gdi32.lib"
+"winspool.lib"
+"comdlg32.lib"
+"advapi32.lib"
+"shell32.lib"
+"ole32.lib"
+"oleaut32.lib"
+"uuid.lib"
+"odbc32.lib"
+"odbccp32.lib"
+"netapi32.lib"
+"iphlpapi.lib"
+"setupapi.lib"
+"synchronization.lib"
+"dwmapi.lib"
+"imm32.lib"
+/OUT:"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Binaries\Win64\UnrealEditor-FrontendUI.dll"
+/PDB:"C:\Unreal Projects\TestFrontendUI\Plugins\FrontendUI\Binaries\Win64\UnrealEditor-FrontendUI.pdb"
+/ignore:4078

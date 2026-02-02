@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\source\\frontendui\\private\\fontendsettings\\frontenddevelopersettings.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unreal projects\\testfrontendui\\intermediate\\build\\win64\\x64\\testfrontenduieditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\frontendui\\definitions.frontendui.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\source\\frontendui\\public\\fontendsettings\\frontenddevelopersettings.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\gameplaytags\\classes\\gameplaytagcontainer.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\core\\public\\misc\\comparisonutility.h",
+            "c:\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\gameplaytags\\uht\\gameplaytagcontainer.generated.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\intermediate\\build\\win64\\unrealeditor\\inc\\frontendui\\uht\\frontenddevelopersettings.generated.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\core\\public\\internationalization\\culture.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\engine\\public\\internationalization\\stringtable.h",
+            "c:\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\stringtable.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

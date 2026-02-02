@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\source\\frontendui\\private\\frontendui.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unreal projects\\testfrontendui\\intermediate\\build\\win64\\x64\\testfrontenduieditor\\debuggame\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\frontendui\\definitions.frontendui.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\source\\frontendui\\public\\frontendui.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

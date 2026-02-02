@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\source\\frontendui\\private\\interface\\loadingscreeninterface.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unreal projects\\testfrontendui\\intermediate\\build\\win64\\x64\\testfrontenduieditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\frontendui\\definitions.frontendui.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\source\\frontendui\\public\\interface\\loadingscreeninterface.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\intermediate\\build\\win64\\unrealeditor\\inc\\frontendui\\uht\\loadingscreeninterface.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

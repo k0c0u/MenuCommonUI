@@ -1,0 +1,32 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\source\\frontendui\\private\\widgets\\options\\dataobjects\\stringlistdataobject.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unreal projects\\testfrontendui\\intermediate\\build\\win64\\x64\\testfrontenduieditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\frontendui\\definitions.frontendui.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\source\\frontendui\\public\\widgets\\options\\dataobjects\\stringlistdataobject.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\source\\frontendui\\public\\widgets\\options\\dataobjects\\valuelistdataobject.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\source\\frontendui\\public\\widgets\\options\\dataobjects\\baselistdataobject.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\uobject\\noexporttypes.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\coreuobject\\public\\serialization\\testundeclaredscriptstructobjectreferences.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\core\\public\\math\\unitconversion.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\core\\public\\math\\unitconversion.inl",
+            "c:\\ue_5.5\\engine\\source\\runtime\\core\\public\\internationalization\\polyglottextdata.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\source\\frontendui\\public\\frontendenumtypes.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\source\\frontendui\\public\\frontendstructtypes.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\intermediate\\build\\win64\\unrealeditor\\inc\\frontendui\\uht\\frontendstructtypes.generated.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\intermediate\\build\\win64\\unrealeditor\\inc\\frontendui\\uht\\baselistdataobject.generated.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\intermediate\\build\\win64\\unrealeditor\\inc\\frontendui\\uht\\valuelistdataobject.generated.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\intermediate\\build\\win64\\unrealeditor\\inc\\frontendui\\uht\\stringlistdataobject.generated.h",
+            "c:\\unreal projects\\testfrontendui\\plugins\\frontendui\\source\\frontendui\\public\\widgets\\options\\optionsdatainteractionhelper.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\propertypath\\public\\propertypathhelpers.h",
+            "c:\\ue_5.5\\engine\\source\\runtime\\propertypath\\public\\propertytypecompatibility.h",
+            "c:\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\propertypath\\uht\\propertypathhelpers.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
