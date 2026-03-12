@@ -2,6 +2,8 @@
 
 
 #include "Widgets/Options/DataObjects/StringListDataObject.h"
+
+#include "FontendSettings/FrontendDeveloperSettings.h"
 #include "Widgets/Options/OptionsDataInteractionHelper.h"
 
 void UStringListDataObject::OnDataObjectInitialized()
@@ -26,7 +28,7 @@ void UStringListDataObject::OnDataObjectInitialized()
 	
 	if (!TrySetDisplayTextFromStringValue(CurrentStringValue))
 	{
-		CurrentDisplayText = FText::FromString(TEXT("Invalid Option"));
+		CurrentDisplayText = UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("InvalidOptionKey")));
 	}
 }
 void UStringListDataObject::AddDynamicOption(const FString& InStringValue, const FText& InTextValue)
@@ -197,12 +199,12 @@ void UStringBoolListDataObject::TryInitBoolValues()
 {
 	if (!AvailableOptionsStringArray.Contains(TrueString))
 	{
-		AddDynamicOption(TrueString, FText::FromString(TEXT("ON")));
+		AddDynamicOption(TrueString, UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("ONKey"))));
 	}
 
 	if (!AvailableOptionsStringArray.Contains(FalseString))
 	{
-		AddDynamicOption(FalseString, FText::FromString(TEXT("OFF")));
+		AddDynamicOption(FalseString, UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("OFFKey"))));
 	}
 }
 
@@ -221,7 +223,7 @@ void UStringIntegerListDataObject::OnDataObjectInitialized()
 
 	if (!TrySetDisplayTextFromStringValue(CurrentStringValue))
 	{
-		CurrentDisplayText = FText::FromString(TEXT("Custom"));
+		CurrentDisplayText = UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("CustomKey")));
 	}
 }
 
@@ -239,7 +241,7 @@ void UStringIntegerListDataObject::OnEditDependencyDataModified(UBaseListDataObj
 
 		if (!TrySetDisplayTextFromStringValue(CurrentStringValue))
 		{
-			CurrentDisplayText = FText::FromString(TEXT("Custom"));
+			CurrentDisplayText = UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("CustomKey")));
 		}
 
 		NotifyListDataModified(this, EOptionsListDataModifyReason::Dependency);

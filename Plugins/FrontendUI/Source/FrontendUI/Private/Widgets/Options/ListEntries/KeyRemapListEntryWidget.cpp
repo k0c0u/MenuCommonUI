@@ -83,27 +83,27 @@ void UKeyRemapListEntryWidget::OnResetKeyBindingButtonClicked()
 
 	if (KeyRemapDataObject.IsValid() && !KeyRemapDataObject->CanResetBackToDefaultValue())
 	{
-		UFrontendUISubsystem::Get(this)->PushConfirmScreenToModalStackAsync(EConfirmScreenType::Ok,
-		                                                                    FText::FromString(
-			                                                                    TEXT("Reset Key Mapping")),
-		                                                                    FText::FromString(
-			                                                                    TEXT("The Key inding for ") +
-			                                                                    KeyRemapDataObject->GetDataDisplayName()
-			                                                                    .ToString() + TEXT(
-				                                                                    " is already set to default")),
-		                                                                    [](EConfirmScreenButtonType ClickedButton)
-		                                                                    {
-		                                                                    });
+		TArray<FText> Args;
+		Args.Add(UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("KeyBindingForKey"))));
+		Args.Add(FText::FromString(KeyRemapDataObject->GetDataDisplayName().ToString()));
+		Args.Add(UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("AlreadySetToDefaultKey"))));
 
+		UFrontendUISubsystem::Get(this)->PushConfirmScreenToModalStackAsync(EConfirmScreenType::Ok,
+		UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("ResetKeyMappingKey"))),
+		FText::Join(FText::FromString(" "), Args),[](EConfirmScreenButtonType ClickedButton){});
 		return;
 	}
-
+	
 	//Reset key binding back to default
+	TArray<FText> Args;
+	Args.Add(UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("AreYouSureResetKey"))));
+	Args.Add(FText::FromString(KeyRemapDataObject->GetDataDisplayName().ToString()));
+	Args.Add(FText::FromString(TEXT("?")));
+	
 	UFrontendUISubsystem::Get(this)->PushConfirmScreenToModalStackAsync(EConfirmScreenType::YesNo,
-	FText::FromString(TEXT("Reset Key Mapping")),
-	FText::FromString(TEXT("Are you sure you want to reset the key binding for ") +
-	KeyRemapDataObject->GetDataDisplayName().ToString() + TEXT("?")),
-[this](EConfirmScreenButtonType ClickedButton)
+	UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("ResetKeyMappingKey"))),
+	FText::Join(FText::FromString(" "), Args),
+	[this](EConfirmScreenButtonType ClickedButton)
 		            {
 		                if (ClickedButton == EConfirmScreenButtonType::Confirmed)
 		                {
@@ -124,7 +124,5 @@ void UKeyRemapListEntryWidget::OnKeyRemapCanceled(const FText& CanceledReason)
 {
 	const FText RemapText = UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("KeyRemapKey")));
 	UFrontendUISubsystem::Get(this)->PushConfirmScreenToModalStackAsync(EConfirmScreenType::Ok, RemapText, CanceledReason,
-	                                                                    [](EConfirmScreenButtonType)
-	                                                                    {
-	                                                                    });
+	[](EConfirmScreenButtonType){});
 }

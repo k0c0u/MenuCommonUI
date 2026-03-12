@@ -267,7 +267,7 @@ FString UOptionsScreenWidget::TryGetEntryWidgetClassName(UObject* InOwningListIt
 	{
 		return Widget->GetClass()->GetName();
 	}
-	return TEXT("Entry Widget Not Valid");
+	return UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("EntryWidgetNotValidKey"))).ToString();
 }
 
 void UOptionsScreenWidget::OnListViewDataModified(UBaseListDataObject* ModifiedData, EOptionsListDataModifyReason ModifiedReason)

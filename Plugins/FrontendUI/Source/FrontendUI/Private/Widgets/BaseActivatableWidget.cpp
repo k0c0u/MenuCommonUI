@@ -9,6 +9,6 @@ APlayerController* UBaseActivatableWidget::GetOwningPlayerController()
 	{
 		CachedOwningPC = GetOwningPlayer<APlayerController>();
 	}
-
+	
 	return CachedOwningPC.IsValid() ? CachedOwningPC.Get() : nullptr;
 }

@@ -47,6 +47,18 @@ public:
 	UPROPERTY(EditAnywhere, Category="Localization", meta = (ForceInlineRow))
 	FName DefaultCulture = "en";//NormalizeCultureName(FName(*FPlatformMisc::GetDefaultLanguage()));
 
+	UPROPERTY(Config, EditAnywhere, Category = "Audio")
+	TSoftObjectPtr<USoundClass> MasterSoundClass;
+	
+	UPROPERTY(Config, EditAnywhere, Category = "Audio")
+	TSoftObjectPtr<USoundClass> MusicSoundClass;
+
+	UPROPERTY(Config, EditAnywhere, Category = "Audio")
+	TSoftObjectPtr<USoundClass> SoundFXSoundClass;
+
+	UPROPERTY(Config, EditAnywhere, Category = "Audio")
+	TSoftObjectPtr<USoundMix> DefaultSoundMix;
+
 private:
 	mutable TMap<FName, FName> CachedTableIds;
 

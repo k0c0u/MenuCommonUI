@@ -135,12 +135,12 @@ void UKeyRemapScreenWidget::NativeOnActivated()
 	{
 	case ECommonInputType::MouseAndKeyboard:
 		{
-			InputDeviceName = TEXT("Mouse & Keyboard");
+			InputDeviceName = UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("Mouse&KeyboardKey"))).ToString();
 			break;
 		}
 	case ECommonInputType::Gamepad:
 		{
-			InputDeviceName = TEXT("Gamepad");
+			InputDeviceName = UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("GamepadKey"))).ToString();
 			break;
 		}
 	case ECommonInputType::Touch:
@@ -148,13 +148,14 @@ void UKeyRemapScreenWidget::NativeOnActivated()
 	default:
 		break;
 	}
+	
+	const FText ConfirmMessage = FText::Format(
+		UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("KeyRemapDefaultMessageKey"))),
+		FText::FromString(FString::Printf(TEXT("<KeyRemapHighlight>%s </>"), *InputDeviceName)),
+		FText::FromString(FString::Printf(TEXT("<KeyRemapDefault>%s.</>"), *UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("KeyKey"))).ToString()))
+	);
 
-	TArray<FText> Args;
-	Args.Add(UFrontendDeveloperSettings::Get()->FindTextByStringTableKey(FName(TEXT("KeyRemapDefaultMessageKey"))));
-	Args.Add(FText::FromString(FString::Printf(
-		TEXT("<KeyRemapHighlight>%s</> <KeyRemapDefault>key.</>"), *InputDeviceName)));
-
-	RemapMessage->SetText(FText::Join(FText::FromString(" "), Args));
+	RemapMessage->SetText(ConfirmMessage);
 }
 
 void UKeyRemapScreenWidget::NativeOnDeactivated()

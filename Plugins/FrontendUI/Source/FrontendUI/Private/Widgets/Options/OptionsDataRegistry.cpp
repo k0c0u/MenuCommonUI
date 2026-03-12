@@ -199,6 +199,7 @@ void UOptionsDataRegistry::InitAudioCollectionTab()
 			}
 		}
 
+		/*
 		//Sound Category
 		if (UCollectionListDataObject* SoundCategoryCollection = NewObject<UCollectionListDataObject>())
 		{
@@ -237,7 +238,8 @@ void UOptionsDataRegistry::InitAudioCollectionTab()
 				SoundCategoryCollection->AddChildListData(UseHDRAudioMode);
 			}
 		}
-
+		*/
+		
 		RegisteredOptionsTabCollection.Add(AudioTabCollection);
 	}
 }

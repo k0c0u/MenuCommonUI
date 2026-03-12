@@ -76,6 +76,11 @@ public:
 	const FName& GetLanguage() const {return CurrentLanguage;}
 	UFUNCTION()
 	void SetLanguage(const FName& New) {CurrentLanguage=New;}
+	
+	virtual void ApplyNonResolutionSettings() override;
+
+private:
+	void OnPostLoadMap(UWorld* LoadedWorld);
 
 private:
 	UPROPERTY(Config)
@@ -100,4 +105,6 @@ private:
 	UPROPERTY(Config)
 	FName CurrentLanguage;
 	// ***** Audio Collection Tab ***** //
+
+	FDelegateHandle PostLoadMapHandle;
 };
